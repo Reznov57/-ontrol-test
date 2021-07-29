@@ -180,21 +180,22 @@ hr {
   padding-bottom: 100px;
   position: relative;
   width: 49%;
-  height: 320px;
+  height: 370px;
   background-color: rgb(245, 245, 245);
   box-shadow: 8px 8px 5px -3px rgba(34, 60, 80, 0.2);
 }
+
 .table_image {
   display: flex;
   margin-top: -22px;
   margin-left: 22px;
   position: absolute;
   padding: 25px;
-  background-color: rgb(231, 178, 43);
-  width: 91%;
+  width: 92%;
   height: 80px;
   box-shadow: 11px 10px 3px -9px rgba(34, 60, 80, 0.2);
 }
+
 .button_table {
   opacity: 0;
   width: 0;
@@ -231,20 +232,104 @@ hr {
 .label_button:hover {
   background-color: rgb(236, 192, 81);
 }
-.label_button-chk:checked + .label_button {
-  background-color: #ccc;
-}
+
 .table_block {
   display: flex;
   justify-content: space-between;
 }
+.table_checkbox {
+  color: rgb(109, 109, 109);
+  width: 92%;
+  margin-left: 25px;
+  margin-top: 70px;
+  border-collapse: collapse;
+}
+.table_checkbox tr:nth-child(-n + 3) {
+  border-bottom: 1px solid rgb(134, 134, 134);
+}
+.table_checkbox td {
+  padding: 10px 10px 0px 5px;
+}
 
+.button_edit {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.button_remove {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.edit_image {
+  vertical-align: -25px;
+}
+.edit_image:active {
+  transform: scale(0.9);
+}
+.remove_image {
+  vertical-align: -25px;
+}
+.remove_image:active {
+  transform: scale(0.9);
+}
+.table2_image {
+  margin-top: -22px;
+  margin-left: 22px;
+  position: absolute;
+  padding: 18px;
+  width: 92%;
+  height: 95px;
+  box-shadow: 11px 10px 3px -9px rgba(34, 60, 80, 0.2);
+}
+.text_stats_h2 {
+  font-size: 20px;
+  color: rgb(223, 223, 223);
+}
+.text_stats_h3 {
+  font-size: 17px;
+  color: rgb(223, 223, 223);
+  padding-top: 16px;
+}
+.table_emlpoyees {
+  color: rgb(109, 109, 109);
+  width: 92%;
+  margin-left: 25px;
+  margin-top: 90px;
+  border-collapse: collapse;
+}
+.table_emlpoyees th {
+  color: rgb(87, 182, 174);
+  padding: 12px 0px 12px 12px;
+  text-align: left;
+}
+.table_emlpoyees td {
+  padding: 12px 0px 12px 12px;
+}
+.table_emlpoyees tr:nth-child(-n + 4) {
+  border-bottom: 1px solid rgb(134, 134, 134);
+}
 .foot_block {
+  justify-content: space-between;
+  display: flex;
   z-index: -1;
   position: absolute;
-  bottom: -33%;
+  bottom: -43%;
   right: 0px;
   border-top: 1px solid rgb(110, 110, 110);
   width: 84%;
   height: 20px;
+}
+.foot_text_a {
+  padding: 22px 22px 22px 22px;
+}
+.foot_text_years {
+  padding: 22px;
+}
+.foot_text_a a {
+  padding-left: 11px;
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  font-size: 15px;
 }
