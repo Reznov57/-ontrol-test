@@ -7,6 +7,7 @@
 body {
   background-color: rgb(231, 231, 231);
 }
+
 .navigation {
   position: fixed;
   width: 190px;
@@ -33,6 +34,10 @@ body {
 }
 .text_Dashboard {
   padding-left: 12px;
+}
+.menu_dashboard {
+  padding-right: 12px;
+  display: none;
 }
 .Dashboard {
   display: flex;
@@ -70,11 +75,12 @@ body {
 .money_block {
   margin-top: 100px;
   position: relative;
-  width: 24%;
+  width: 49%;
   height: 120px;
   background-color: rgb(245, 245, 245);
   box-shadow: 8px 8px 5px -3px rgba(34, 60, 80, 0.2);
 }
+
 .main_block h2 {
   padding-top: 12px;
 }
@@ -115,9 +121,20 @@ hr {
   padding-top: 12px;
   padding-left: 8%;
 }
-.time_block {
+.time_block_one {
   display: flex;
   justify-content: space-between;
+}
+.base_money_block {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+}
+.base_money_block:last-child {
+  padding-left: 1%;
+}
+.time_block_two {
+  display: flex;
 }
 .orange {
   background-color: rgb(231, 178, 43);
@@ -333,3 +350,175 @@ hr {
   font-weight: bold;
   font-size: 15px;
 }
+@media screen and (max-width: 1120px) {
+  .time_block_one {
+    display: block;
+    justify-content: space-between;
+  }
+  .graphics_block {
+    margin-top: 70px;
+    position: relative;
+    width: 30%;
+    height: 290px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 8px 8px 5px -3px rgba(34, 60, 80, 0.2);
+  }
+  .base_money_block:last-child {
+    padding-left: 0;
+  }
+  .graphics_image {
+    margin-top: -22px;
+    margin-left: 10%;
+    position: absolute;
+    width: 80%;
+    height: 150px;
+    box-shadow: 11px 10px 3px -9px rgba(34, 60, 80, 0.2);
+    padding: 10px;
+  }
+  .graphics_text_h2 {
+    padding-top: 140px;
+    font-size: 22px;
+    padding-left: 9%;
+    color: rgb(99, 99, 99);
+  }
+  .graphics_text_h3 {
+    font-size: 18px;
+    padding-left: 9%;
+    padding-bottom: 11px;
+    color: rgb(129, 129, 129);
+  }
+  .graphics_get_text {
+    display: flex;
+    padding-top: 12px;
+    padding-left: 9%;
+  }
+  .graphics_get_text p {
+    font-size: 11px;
+    padding-left: 9px;
+    color: rgb(129, 129, 129);
+  }
+  .table_block {
+    display: block;
+    justify-content: space-between;
+  }
+  .table_money_block {
+    margin-top: 120px;
+    padding-bottom: 100px;
+    position: relative;
+    width: 92%;
+    height: 370px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 8px 8px 5px -3px rgba(34, 60, 80, 0.2);
+  }
+  .table_image {
+    display: flex;
+    margin-top: -22px;
+    margin-left: 22px;
+    position: absolute;
+    padding: 25px;
+    width: 94%;
+    height: 80px;
+    box-shadow: 11px 10px 3px -9px rgba(34, 60, 80, 0.2);
+  }
+  .table_checkbox {
+    color: rgb(109, 109, 109);
+    width: 94%;
+    margin-left: 25px;
+    margin-top: 70px;
+    border-collapse: collapse;
+  }
+  .table_money_block {
+    padding-top: 12px;
+  }
+  .table_emlpoyees {
+    color: rgb(109, 109, 109);
+    width: 92%;
+    padding-top: 22%;
+    margin-left: 25px;
+    margin-top: 90px;
+    border-collapse: collapse;
+  }
+  .table2_image {
+    margin-top: -22px;
+    margin-left: 22px;
+    position: absolute;
+    padding: 18px;
+    width: 94%;
+    height: 95px;
+    box-shadow: 11px 10px 3px -9px rgba(34, 60, 80, 0.2);
+  }
+  .remove_image {
+    vertical-align: -15px;
+    padding-bottom: 12px;
+  }
+  .edit_image {
+    vertical-align: -15px;
+    padding-bottom: 12px;
+  }
+  .foot_block {
+    justify-content: space-between;
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    bottom: -160%;
+    right: 0px;
+    border-top: 1px solid rgb(110, 110, 110);
+    width: 80%;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navigation {
+    width: 0px;
+    overflow: hidden;
+  }
+  .text_h2 {
+    display: none;
+  }
+  .menu_nav {
+    list-style-type: none;
+    font-size: 18px;
+  }
+  .Dashboard a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+  }
+  .text_Dashboard {
+    padding-left: 12px;
+  }
+  .Dashboard {
+    display: flex;
+  }
+  .menu_nav li {
+    width: 90%;
+    margin-top: 12px;
+    padding: 8%;
+    position: relative;
+    margin-left: 4%;
+  }
+  .Dashboard:hover > .image1 {
+    filter: brightness(2);
+  }
+  .Dashboard:hover {
+    background-color: rgb(247, 47, 130);
+    box-shadow: 13px 12px 3px -10px rgba(34, 60, 80, 0.2);
+  }
+  .Dashboard:hover > a {
+    color: aliceblue;
+  }
+  .main_block {
+    position: absolute;
+    z-index: -1;
+    margin-left: 5%;
+    width: 100%;
+    height: 100%;
+  }
+  .menu_dashboard {
+    padding-right: 12px;
+    display: inline;
+  }
+
+  .menu_dashboard:active + .navigation {
+    width: 250px;
+  }
+} ;
